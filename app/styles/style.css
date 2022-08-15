@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Fredoka", sans-serif;
+  letter-spacing: 3px;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #4f4d4d;
+  font-size: 18px;
+}
+.section_presentation {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+
+ /*  border: red solid 3px; */
+}
+.presentation {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.presentation img {
+  width: 156px;
+}
+.section_skills, .section_project{
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+/* 
+  border: red solid 3px; */
+}
+.skills, .projetos_area {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    gap: 15px;
+}
+.container_skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.item {
+    display: flex;
+    justify-items: center;
+    width: fit-content;
+    height: 35px;
+    padding: 0px 10px;
+    border-radius: 30px;
+    background-color: black;
+    font-family: "Fredoka", sans-serif;
+    color: white;
+    align-items: center;
+}
+.link_contact{
+    display: flex;
+    gap:15px;
+}  
+.link_contact p{
+    font-weight: bolder;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    color:black;
+}
+footer{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 15px;
+}
+
