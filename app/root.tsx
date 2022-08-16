@@ -8,15 +8,19 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import styles from "./styles/style.css";
+import globalStyles from "./styles/globalStyles.css";
 
 export const links: LinksFunction = () => {
-  return [{ rel:'stylesheet', href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    { rel: "stylesheet", href: globalStyles },
+  ];
 };
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Saiti",
-  description:"Pagininha sabrininha glu glu yah yah!",
+  description: "Pagininha sabrininha glu glu yah yah!",
   viewport: "width=device-width,initial-scale=1",
 });
 

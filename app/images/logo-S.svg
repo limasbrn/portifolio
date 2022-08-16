@@ -1,11 +1,11 @@
-<svg width="33" height="47" viewBox="0 0 33 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="16.6925" cy="17.1591" r="3.86393" stroke="black" stroke-width="3"/>
-<path d="M5.46606 14.8692C8.1869 10.0494 16.6137 2.92859 28.5543 13.0034" stroke="black" stroke-width="3"/>
-<path d="M6.86938 40.5831C9.79951 44.9459 22.3304 48.1067 28.0266 40.583" stroke="black" stroke-width="3" stroke-linecap="round"/>
-<path d="M27.2686 11.8596L31 8.12817" stroke="black" stroke-width="3" stroke-linecap="round"/>
-<path d="M5.81282 13.259L1.99999 10.7545" stroke="black" stroke-width="3" stroke-linecap="round"/>
-<path d="M22.1379 8.82787L24.9755 3.72572" stroke="black" stroke-width="3" stroke-linecap="round"/>
-<path d="M10.4772 9.52741L7.67408 4.37448" stroke="black" stroke-width="3" stroke-linecap="round"/>
-<path d="M16.5407 7.66186L16.4831 2.00005" stroke="black" stroke-width="3" stroke-linecap="round"/>
-<path d="M7 20.7754C7 25.6504 11.5 27.6577 17.5 27.6577C25.0807 27.6577 27.3 31.4813 28 33.7754" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<svg width="55" height="79" viewBox="0 0 55 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M33.4773 29.5385C33.4773 32.4319 31.0932 34.8269 28.091 34.8269C25.0887 34.8269 22.7046 32.4319 22.7046 29.5385C22.7046 26.645 25.0887 24.25 28.091 24.25C31.0932 24.25 33.4773 26.645 33.4773 29.5385Z" stroke="black" stroke-width="4.5"/>
+<path d="M8.737 24.7887C13.2404 16.6285 27.1883 4.57243 46.952 21.6299" stroke="black" stroke-width="4.5"/>
+<path d="M10 69.0001C14.9858 75.7362 36.3077 80.6165 46 69" stroke="black" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M45.8239 19.6931L52 13.3755" stroke="black" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M9.3109 22.7843L2.99999 18.5441" stroke="black" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M36.3317 14.5601L41.0285 5.92178" stroke="black" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M17.0313 15.7446L12.3916 7.02033" stroke="black" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M27.0674 12.5857L26.9721 2.99988" stroke="black" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M10 37C10 43.375 17.7143 46 28 46C40.9954 46 44.8 51 46 54" stroke="black" stroke-width="4.5" stroke-linecap="round"/>
 </svg>

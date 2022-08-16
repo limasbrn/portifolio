@@ -1,86 +1,143 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
+.btn-section {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 15px;
 }
-h1,
-h2,
-h3 {
-  font-family: "Fredoka", sans-serif;
-  letter-spacing: 3px;
-}
-p {
-  font-family: "Montserrat", sans-serif;
-  color: #4f4d4d;
-  font-size: 18px;
+.mode_btn {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
 }
 .section_presentation {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-
- /*  border: red solid 3px; */
+  height: 90vh;
 }
 .presentation {
-  display: flex;
+  max-width: 585px;
   flex-direction: column;
-  width: 90vw;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   gap: 15px;
 }
 .presentation img {
   width: 156px;
 }
-.section_skills, .section_project{
+.section {
+  padding: 15px 0px;
+}
+.container {
   display: flex;
-  height: fit-content;
+  flex-direction: column;
+  width: 80%;
+  gap: 15px;
+}
+.container_projeto {
+  width: 100%;
+  min-height: 233px;
+  border: #e8e8e8 1px solid;
+  border-radius: 10px;
+}
+.projects {
+  flex-direction: column;
+  gap: 15px;
+}
+.botao_container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 0px;
-/* 
-  border: red solid 3px; */
 }
-.skills, .projetos_area {
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    gap: 15px;
+.btn_github {
+  padding: 5px 10px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 30px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  gap: 10px;
+  margin-top: 15px;
 }
-.container_skills{
-    display: flex;
-    flex-wrap: wrap;
-    gap:10px;
+.btn_github:hover {
+  background-color: #8a64f3;
+}
+.container_skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .item {
-    display: flex;
-    justify-items: center;
-    width: fit-content;
-    height: 35px;
-    padding: 0px 10px;
-    border-radius: 30px;
-    background-color: black;
-    font-family: "Fredoka", sans-serif;
-    color: white;
-    align-items: center;
+  width: fit-content;
+  height: 35px;
+  padding: 0px 10px;
+  border-radius: 30px;
+  background-color: black;
+  font-family: "Fredoka", sans-serif;
+  color: white;
 }
-.link_contact{
-    display: flex;
-    gap:15px;
-}  
-.link_contact p{
-    font-weight: bolder;
-    font-family: "Fredoka", sans-serif;
-    font-size: 20px;
-    color:black;
+.link_contact {
+  display: flex;
+  gap: 10px;
 }
-footer{
-    display: flex;
-    height: 200px;
+.link_contact p {
+  font-weight: bolder;
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+.link_contact p:hover {
+  color: #8a64f3;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 15px;
+}
+footer img {
+  width: auto;
+  height: 40px;
+}
+/* media queries */
+@media screen and (min-width: 650px) {
+  .container_skills {
     justify-content: center;
-    align-items: flex-end;
-    padding: 15px;
+  }
+  .container_projeto {
+    height: 300px;
+  }
 }
-
+@media screen and (min-width: 900px) {
+  .section {
+    width: 100%;
+    margin: auto;
+  }
+  .item {
+    height: 30px;
+    font-size: 13.5px;
+  }
+  .projects {
+    flex-direction: row;
+  }
+  .container_projeto {
+    width: 33%;
+    height: 200px;
+  }
+  .btn_github {
+    font-size: 16px;
+  }
+  .link_contact p {
+    font-size: 18px;
+  }
+  .botao_container,
+  footer {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 70%;
+  }
+}
