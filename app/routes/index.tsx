@@ -4,6 +4,9 @@ import linkedInIcon from "../icons/linkedin-icon.svg";
 import littleLogo from "../images/logo-S.svg";
 import githubIcon from "../icons/github-icon.svg";
 import moonIcon from "../icons/moon-icon.svg";
+import { PresentationWrapper } from "~/components/presentation";
+import { SectionWrapper } from "~/components/section";
+import { Skill } from "~/components/skill";
 
 export default function Index() {
   return (
@@ -13,7 +16,7 @@ export default function Index() {
           <img src={moonIcon} />
         </button>
       </div>
-      <section className="section_presentation centralize">
+      <PresentationWrapper>
         <div className="presentation centralize">
           <img src={logo} />
           <h3>Front - end Jr & Ilustradora</h3>
@@ -22,29 +25,29 @@ export default function Index() {
             prazer em conhecê-lo!
           </p>
         </div>
-      </section>
+      </PresentationWrapper>
 
-      <section className="section centralize">
+      <SectionWrapper>
         <div className="container">
           <h2>Skills</h2>
           <p>Conhecimentos e ferramentas com que tenho trabalhado</p>
           <div className="container_skills">
-            <div className="item hover_item centralize">HTML</div>
-            <div className="item hover_item centralize">CSS</div>
-            <div className="item hover_item centralize">React Js</div>
-            <div className="item hover_item centralize">Git</div>
-            <div className="item hover_item centralize">Metodologias Ágeis</div>
-            <div className="item hover_item centralize">Adobe XD</div>
-            <div className="item hover_item centralize">JavaScript</div>
-            <div className="item hover_item centralize">Tailwind</div>
-            <div className="item hover_item centralize">Stiches</div>
-            <div className="item hover_item centralize">Illustrator</div>
-            <div className="item hover_item centralize">Figma</div>
+            <Skill text="HTML"/>
+            <Skill text="CSS"/>
+            <Skill text="React Js"/>
+            <Skill text="Git"/>
+            <Skill text="Metodologias Ágeis"/>
+            <Skill text="Adobe XD"/>
+            <Skill text="JavaScript"/>
+            <Skill text="Tailwind"/>
+            <Skill text="Stiches"/>
+            <Skill text="Illustrator"/>
+            <Skill text="Figma"/>
           </div>
         </div>
-      </section>
+      </SectionWrapper>
 
-      <section className="section centralize">
+      <SectionWrapper>
         <div className="container">
           <h2>Projetos</h2>
           <p>Conheça alguns dos meus projetos</p>
@@ -59,14 +62,14 @@ export default function Index() {
             <a href="https://github.com/limasbrn">
               <button className="btn_github centralize">
                 <img src={githubIcon} />
-                <span  className="bolder_subtext">Visite o repositório</span>
+                <span className="bolder_subtext">Visite o repositório</span>
               </button>
             </a>
           </div>
         </div>
-      </section>
+      </SectionWrapper>
 
-      <section className="section centralize">
+      <SectionWrapper>
         <div className="container">
           <h2>Contatos</h2>
           <p>Me mande um alô!</p>
@@ -81,7 +84,7 @@ export default function Index() {
             </a>
           </div>
         </div>
-      </section>
+      </SectionWrapper>
 
       <footer>
         <img src={littleLogo} />
