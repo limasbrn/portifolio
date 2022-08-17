@@ -52,9 +52,6 @@
   background-color: white;
   border: 3px solid black;
   border-radius: 30px;
-  font-family: "Fredoka", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
   gap: 10px;
   margin-top: 15px;
 }
@@ -80,9 +77,6 @@
   gap: 10px;
 }
 .link_contact p {
-  font-weight: bolder;
-  font-family: "Fredoka", sans-serif;
-  font-size: 20px;
   color: black;
 }
 .link_contact p:hover {
@@ -124,12 +118,6 @@ footer img {
   .container_projeto {
     width: 33%;
     height: 200px;
-  }
-  .btn_github {
-    font-size: 16px;
-  }
-  .link_contact p {
-    font-size: 18px;
   }
   .botao_container,
   footer {

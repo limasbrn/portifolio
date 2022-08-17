@@ -59,7 +59,7 @@ export default function Index() {
             <a href="https://github.com/limasbrn">
               <button className="btn_github centralize">
                 <img src={githubIcon} />
-                <span>Visite o repositório</span>
+                <span  className="bolder_subtext">Visite o repositório</span>
               </button>
             </a>
           </div>
@@ -72,12 +72,12 @@ export default function Index() {
           <p>Me mande um alô!</p>
           <div className="link_contact">
             <img src={emailIcon} />
-            <p>lima.sbrn@gmail</p>
+            <p className="bolder_subtext">lima.sbrn@gmail</p>
           </div>
           <div className="link_contact">
             <img src={linkedInIcon} />
             <a href="https://www.linkedin.com/in/sabrinalsilva/">
-              <p>/sabrinalsilva</p>
+              <p className="bolder_subtext">/sabrinalsilva</p>
             </a>
           </div>
         </div>
