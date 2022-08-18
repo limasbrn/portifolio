@@ -1,21 +1,89 @@
 .btn-section {
   display: flex;
-  height: 10vh;
+  position: relative;
+  height: 8vh;
   align-items: center;
   justify-content: flex-end;
   margin-right: 15px;
+}
+.linha1 {
+  position: absolute;
+  top: 0px;
+  right: -15px;
+  z-index: 1;
 }
 .mode_btn {
   width: 40px;
   height: 40px;
   background-color: black;
   border-radius: 50%;
+  z-index: 2;
 }
 .section_presentation {
-  height: 90vh;
+  position: relative;
+  height: 92vh;
+}
+.linha2 {
+  position: absolute;
+  top: 50%;
+  right: -150px;
+  z-index: 1;
+}
+.linha_curve{
+  display: none;
+  position: absolute;
+  left:-270px;
+  top:-300px;
+}
+.x1_left {
+  position: absolute;
+  top: 30px;
+  left: 47px;
+  z-index: 1;
+}
+.x2_right {
+  position: absolute;
+  bottom: 150px;
+  right: 70px;
+  z-index: 1;
+}
+.x3_right {
+  position: absolute;
+  left: 30px;
+  bottom: -60px;
+}
+.black_circle {
+  position: absolute;
+  bottom: 75px;
+  right: 80px;
+  z-index: 1;
+}
+.black_circle_top {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+}
+.circle_left{
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  left:30%;
+}
+.eye_1 {
+  position: absolute;
+  bottom: 37px;
+  left: 30px;
+  z-index: 1;
+}
+.eye_2 {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  z-index: 100;
 }
 .presentation {
-  max-width: 585px;
+  max-width: 270px;
   flex-direction: column;
   text-align: center;
   gap: 15px;
@@ -24,19 +92,24 @@
   width: 156px;
 }
 .section {
+  position: relative;
   padding: 15px 0px;
+  z-index: 10;
 }
 .container {
   display: flex;
+  background-color: white;
   flex-direction: column;
   width: 80%;
   gap: 15px;
+  z-index: 10;
 }
 .container_projeto {
   width: 100%;
   min-height: 233px;
   border: #e8e8e8 1px solid;
   border-radius: 10px;
+  background-color: white;
 }
 .projects {
   flex-direction: column;
@@ -62,6 +135,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  background-color: white;
+  z-index: 10;
 }
 .item {
   width: fit-content;
@@ -82,7 +157,8 @@
 .link_contact p:hover {
   color: #8a64f3;
 }
-footer {
+.footer_container {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 200px;
@@ -90,17 +166,51 @@ footer {
   align-items: flex-end;
   padding: 15px;
 }
-footer img {
+.footer_line{
+  display: none;
+  position: absolute;
+  bottom: -25px;
+  left:120px;
+}
+.footer_logo {
   width: auto;
   height: 40px;
 }
 /* media queries */
+@media screen and (min-width: 450px) {
+  .presentation {
+    max-width: 360px;
+  }
+}
 @media screen and (min-width: 650px) {
+  .presentation {
+    max-width: 500px;
+  }
+  .eye_1 {
+    bottom: 175px;
+    left: 100px;
+  }
+  .linha_curve{
+    display: flex;
+  }
   .container_skills {
     justify-content: center;
   }
   .container_projeto {
     height: 300px;
+  }
+}
+@media screen and (min-width: 850px) {
+  .container,
+  .container_skills {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .circle_left{
+    display: flex;
+  }
+  .eye_2{
+    top:50px;
+    right: 150px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -123,9 +233,34 @@ footer img {
   footer {
     justify-content: flex-end;
   }
+  .linha1 {
+    top:-15px;
+    right:100px;
+  }
+  .footer_line{
+    display: flex;
+  }
+  .x3_right{
+    left:300px;
+  }
 }
 @media screen and (min-width: 1000px) {
   .container {
     width: 70%;
   }
+}
+@media screen and (min-width: 1200px) {
+  .linha2{
+    right: -100px;
+  }
+  .x2_right{
+    right: 140px;
+  }
+  .black_circle{
+    right:120px;
+  }
+  .x3_right{
+    left:400px;
+  }
+
 }
