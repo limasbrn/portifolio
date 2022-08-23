@@ -19,6 +19,9 @@ import eye2 from "../images/eye-2.svg"
 import x3Right from "../images/x-3.svg"
 import blackCircleLeft from "../images/circle-left.svg"
 import footerLine from "../images/line_footer.svg"
+import oucastStore from "../images/Home_mini.jpg"
+import studyBuddies from "../images/studdy-buddies.jpg"
+import uxAcademy from "../images/ux-academy.jpg"
 
 
 export default function Index() {
@@ -79,9 +82,38 @@ export default function Index() {
           <p>Conheça alguns dos meus projetos</p>
 
           <div className="projects centralize">
-            <div className="container_projeto hover_item"></div>
-            <div className="container_projeto hover_item"></div>
-            <div className="container_projeto hover_item"></div>
+            <div className="container_projeto hover_item centralize">
+              <img src={ oucastStore }/>
+              <div className="project_detail"> 
+                <span className="bolder_subtext">Outcast Store</span>
+                <ul className="tools_project">
+                  <li className="normal_subtext centralize">React Js</li>
+                  <li className="normal_subtext centralize">Tailwind</li>
+                </ul>
+              </div>
+            </div>
+            <div className="container_projeto hover_item">
+              <img src={ studyBuddies}/>
+              <div className="project_detail"> 
+                <span className="bolder_subtext">Study Buddies</span>
+                <ul className="tools_project">
+                  <li className=" normal_subtext centralize">Css</li>
+                  <li className=" normal_subtext centralize">Html</li>
+                  <li className=" normal_subtext centralize">Js</li>
+                </ul>
+              </div>
+            </div>
+            <div className="container_projeto hover_item">
+              <img src={ uxAcademy }/>
+              <div className="project_detail"> 
+                <span className="bolder_subtext">Ux Acadamy</span>
+                <ul className="tools_project">
+                  <li className=" normal_subtext centralize">Css</li>
+                  <li className=" normal_subtext centralize">Html</li>
+                  <li className=" normal_subtext centralize">Js</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div className="botao_container">

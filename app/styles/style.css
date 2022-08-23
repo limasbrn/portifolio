@@ -106,10 +106,38 @@
 }
 .container_projeto {
   width: 100%;
-  min-height: 233px;
+  min-height: fit-content;
+  flex-direction: column;
   border: #e8e8e8 1px solid;
   border-radius: 10px;
   background-color: white;
+  overflow: hidden;
+}
+.container_projeto img{
+  width: 100%;
+  height:auto;
+}
+.project_detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0px;
+  background-color:#000000;
+  color: white;
+  gap: 10px;
+}
+.tools_project{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+}
+.tools_project li{
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 30px;
+  background-color:white;
+  color: black;
 }
 .projects {
   flex-direction: column;
@@ -160,6 +188,7 @@
 .footer_container {
   position: relative;
   display: flex;
+  overflow-y: hidden;
   flex-direction: column;
   height: 200px;
   justify-content: flex-end;
@@ -169,7 +198,7 @@
 .footer_line{
   display: none;
   position: absolute;
-  bottom: -25px;
+  bottom: -15px;
   left:120px;
 }
 .footer_logo {
@@ -195,9 +224,6 @@
   }
   .container_skills {
     justify-content: center;
-  }
-  .container_projeto {
-    height: 300px;
   }
 }
 @media screen and (min-width: 850px) {
@@ -227,7 +253,6 @@
   }
   .container_projeto {
     width: 33%;
-    height: 200px;
   }
   .botao_container,
   footer {

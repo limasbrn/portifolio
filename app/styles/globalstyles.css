@@ -28,6 +28,11 @@ a {
   font-family: "Fredoka", sans-serif;
   font-size: 18px;
 }
+.normal_subtext {
+  font-weight:600;
+  font-family: "Fredoka", sans-serif;
+  font-size: 14px;
+}
 .hover_item:hover {
   outline: 3px solid #8a64f3;
 }
